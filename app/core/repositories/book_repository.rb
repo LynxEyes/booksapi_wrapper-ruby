@@ -10,13 +10,17 @@ class BookRepository
     data = URI(search_url(query)).read
     json_data = JSON.parse(data)
 
-    json_data['items'].map(&method(:parse_item_to_book))
+    Array(json_data['items']).map(&method(:parse_item_to_book))
   end
 
   private
 
   def search_url(query)
-    API_BASE_URI + query.free_term
+    url = API_BASE_URI + query.free_term
+
+    url += "&maxResults=#{query.limit}"
+
+    url
   end
 
   def parse_item_to_book(item)

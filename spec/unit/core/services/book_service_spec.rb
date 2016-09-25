@@ -12,7 +12,7 @@ describe BookService do
   subject{ described_class.new(book_repository) }
 
   describe '#search' do
-    let(:query) { SearchQuery.new('Narnia') }
+    let(:query) { SearchQuery.new(free_term: 'Narnia') }
 
     it 'delegates the search on the book_repository' do
       expect(book_repository).to receive(:search).with(query)

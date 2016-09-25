@@ -2,11 +2,12 @@ require 'spec_helper'
 require './app/core/repositories/book_repository'
 require './app/core/models/search_query'
 
-describe BookRepository do
+describe BookRepository, :vcr do
 
-  let(:query) { SearchQuery.new('Narnia') }
+  let(:limit) { 3 }
+  let(:query) { SearchQuery.new(free_term: 'Narnia') }
 
-  describe '#search', :vcr do
+  describe '#search' do
     it 'fetches a list of books matching the search query' do
       results = subject.search(query)
       expect(
@@ -25,6 +26,15 @@ describe BookRepository do
       )
 
       expect(results.first).to eq(expected_book)
+    end
+
+    context 'when limiting results' do
+      let(:query) { SearchQuery.new(free_term: 'Narnia', limit: 3) }
+
+      it 'returns as many results as the query specifies' do
+        results = subject.search(query)
+        expect(results.length).to eq(3)
+      end
     end
   end
 
