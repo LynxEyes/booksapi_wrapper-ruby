@@ -16,7 +16,12 @@ class BookRepository
   private
 
   def search_url(query)
-    url = API_BASE_URI + query.free_term
+    q_bits = [
+      query.free_term,
+      (query.author ? "inauthor:#{query.author}" : nil)
+    ].compact
+
+    url = API_BASE_URI + q_bits.join("+")
 
     url += "&maxResults=#{query.limit}"
 

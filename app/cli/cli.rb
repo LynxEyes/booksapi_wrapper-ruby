@@ -48,8 +48,12 @@ class CLI
     OptionParser.new do |opts|
       opts.banner = "Usage: bookapp [options]"
 
-      opts.on("-l LIMIT", "--limit=LIMIT", "Run verbosely") do |v|
+      opts.on("-l LIMIT", "--limit=LIMIT", "Limit results") do |v|
         query.limit = v.to_i
+      end
+
+      opts.on("-a AUTHOR", "--author=AUTHOR", "Filters by author") do |v|
+        query.author = v
       end
     end.parse!(argv)
 
