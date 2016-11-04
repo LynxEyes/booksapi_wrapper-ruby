@@ -1,5 +1,7 @@
 # bookapp
 
+[![Build Status](https://travis-ci.org/LynxEyes/booksapi_wrapper-ruby.svg?branch=master)](https://travis-ci.org/LynxEyes/booksapi_wrapper-ruby)
+
 ## Requirements
 
 * ruby 2.3
