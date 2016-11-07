@@ -1,6 +1,7 @@
 # bookapp
 
 [![Build Status](https://travis-ci.org/LynxEyes/booksapi_wrapper-ruby.svg?branch=master)](https://travis-ci.org/LynxEyes/booksapi_wrapper-ruby)
+[![Code Climate](https://codeclimate.com/github/LynxEyes/booksapi_wrapper-ruby/badges/gpa.svg)](https://codeclimate.com/github/LynxEyes/booksapi_wrapper-ruby)
 [![CircleCI](https://circleci.com/gh/LynxEyes/booksapi_wrapper-ruby.svg?style=svg)](https://circleci.com/gh/LynxEyes/booksapi_wrapper-ruby)
 
 ## Requirements
