@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/LynxEyes/booksapi_wrapper-ruby.svg?branch=master)](https://travis-ci.org/LynxEyes/booksapi_wrapper-ruby)
 [![Code Climate](https://codeclimate.com/github/LynxEyes/booksapi_wrapper-ruby/badges/gpa.svg)](https://codeclimate.com/github/LynxEyes/booksapi_wrapper-ruby)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/79b42834b5b646038c99f42819db88d5)](https://www.codacy.com/app/ivo-jesus/booksapi_wrapper-ruby?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LynxEyes/booksapi_wrapper-ruby&amp;utm_campaign=Badge_Grade)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/LynxEyes/booksapi_wrapper-ruby/master/LICENSE)
 [![CircleCI](https://circleci.com/gh/LynxEyes/booksapi_wrapper-ruby.svg?style=svg)](https://circleci.com/gh/LynxEyes/booksapi_wrapper-ruby)
 
 ## Requirements
